@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+
+/* navbar styling */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.logo-image{
+    height: 4vh;
+}
+.logo-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icons_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.icon_text{
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.icon_img{
+    width: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.links_list{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    transition: all 0.5s ease-in;
+    border-spacing: 2px;
+
+}
+.link_men:hover,.link_women:hover{
+    border-bottom: 2px solid rgb(216, 42, 187);
+    border-radius: 5px;
+}
+.link_kids:hover{
+    border-bottom: 2px solid rgb(255, 118, 5);
+    border-radius: 5px;
+}
+.link_home:hover{
+    border-bottom: 2px solid rgb(255, 238, 5);
+    border-radius: 5px;
+}
+.link_beauty:hover{
+    border-bottom: 2px solid rgb(5, 205, 255);
+    border-radius: 5px;
+}
+.link_studio:hover{
+    border-bottom: 2px solid rgb(255, 5, 5);
+    border-radius: 5px;
+}
+.search{
+    background: url("../images/search.png");
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 25px;
+    width: 20vw;
+    padding: 10px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    /* border: none; */
+    border-radius: 2cqmin;
+    background-color: rgba(127, 251, 255, 0.103);
+}
+
+
+/* Footer styles */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 36px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.footer_link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list_heading{
+    font-size: 1.3rem;
+}
+.list{
+    margin: 1px 0;
+    color: rgba(0,0,0,0.45);
+}   
