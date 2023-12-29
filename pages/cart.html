@@ -1,144 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
-    <link rel="shortcut icon" href="../images/Myntra_Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/cart.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="../images/Myntra_Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <!-- Navbar Section -->
-        <nav class="nav">
-            <!-- logo images -->
-            <div class="logo-image">
-              <a href="/"
-                ><img class="logo-img" src="../images/Myntra_Logo.png" alt="Logo"
-              /></a>
-            </div>
-            <!-- navbar links list -->
-            <ul class="links">
-              <a href="#" class="link_men">
-                <li class="links_list">Men</li>
-              </a>
-              <a href="#" class="link_women">
-                <li class="links_list">Women</li>
-              </a>
-              <a href="#" class="link_kids">
-                <li class="links_list">Kids</li>
-              </a>
-              <a href="#" class="link_home">
-                <li class="links_list">Home & Living</li>
-              </a>
-              <a href="#" class="link_beauty">
-                <li class="links_list">Beauty</li>
-              </a>
-              <a href="#" class="link_studio">
-                <li class="links_list">Studio</li>
-              </a>
-            </ul>
-            <!-- search bar input -->
-            <div class="search_bar">
-              <input
-                type="text"
-                placeholder="Search for products, brands and more"
-                class="search"
-              />
-            </div>
-            <!-- icons links -->
-            <ul class="icons">
-              <a href="#" class="icons_link icon_profile">
-                <img class="icon_img" src="../images/user.png" alt="profile" />
-                <li class="icon_text">Profile</li>
-              </a>
-              <a href="#" class="icons_link icon_wishlist">
-                <img class="icon_img" src="../images/like.png" alt="like" />
-                <li class="icon_text">Wishlist</li>
-              </a>
-              <a href="./pages/cart.html" class="icons_link icon_bag">
-                <img class="icon_img" src="../images/bag.png" alt="cart" />
-                <li class="icon_text">Bag</li>
-                <span id="cart_count" class="cart_count"></span>
-              </a>
-            </ul>
-          </nav>
+      <!-- Navbar Section -->
+      <nav class="nav">
+        <!-- logo images -->
+        <div class="logo-image">
+          <a href="/"
+            ><img class="logo-img" src="../images/Myntra_Logo.png" alt="Logo"
+          /></a>
+        </div>
+        <!-- navbar links list -->
+        <ul class="links">
+          <a href="#" class="link_men">
+            <li class="links_list">Men</li>
+          </a>
+          <a href="#" class="link_women">
+            <li class="links_list">Women</li>
+          </a>
+          <a href="#" class="link_kids">
+            <li class="links_list">Kids</li>
+          </a>
+          <a href="#" class="link_home">
+            <li class="links_list">Home & Living</li>
+          </a>
+          <a href="#" class="link_beauty">
+            <li class="links_list">Beauty</li>
+          </a>
+          <a href="#" class="link_studio">
+            <li class="links_list">Studio</li>
+          </a>
+        </ul>
+        <!-- search bar input -->
+        <div class="search_bar">
+          <input
+            type="text"
+            placeholder="Search for products, brands and more"
+            class="search"
+          />
+        </div>
+        <!-- icons links -->
+        <ul class="icons">
+          <a href="#" class="icons_link icon_profile">
+            <img class="icon_img" src="../images/user.png" alt="profile" />
+            <li class="icon_text">Profile</li>
+          </a>
+          <a href="#" class="icons_link icon_wishlist">
+            <img class="icon_img" src="../images/like.png" alt="like" />
+            <li class="icon_text">Wishlist</li>
+          </a>
+          <a href="./pages/cart.html" class="icons_link icon_bag">
+            <img class="icon_img" src="../images/bag.png" alt="cart" />
+            <li class="icon_text">Bag</li>
+            <span id="cart_count" class="cart_count"></span>
+          </a>
+        </ul>
+      </nav>
 
-          <!-- Main Section -->
-          <main class="main">
-            <div class="content_center">
-                <div class="product_container">
-                    <div class="product">
-                        <div class="product_info">
-                            <div class="product_img">
-                                <img src="../images/red-tshirt.jpg" alt="red-tshirt">
-                            </div>
-                            <div class="product_detail">
-                                <h3 class="product_heading">Product Name</h3>
-                                <p class="product_desc">Lorem ipsum dolor sit amet.</p>
-                                <div class="quantity">
-                                    <button>-</button>
-                                    <span>1</span>
-                                    <button>+</button>
-                                </div>
-                                <div class="price">
-                                    <span class="rate">Rs.593</span>
-                                    <span class="rate_cut">Rs.1200</span>
-                                    <span class="offer">73% OFF</span>
-                                </div>
-                                <span class="return">
-                                    <span class="return_date">7 Days</span>
-                                    <span>return available</span>
-                                </span>
-                            </div>
-                        </div>
-                        <span class="cancel_product">
-                            <img src="../images/cross.png" alt="">
-                        </span>
-                    </div>
+      <!-- Main Section -->
+      <main class="main">
+        <div id="order_placed" class="before_placed">&#127881; You'r Order is Placed</div>
+        <div class="content_center">
+          <div id="products" class="product_container">
+            <!-- <div class="product">
+              <div class="product_info">
+                <div class="product_img">
+                  <img src="../images/red-tshirt.jpg" alt="red-tshirt" />
                 </div>
-                <div class="order_container"></div>
+                <div class="product_detail">
+                  <h3 class="product_heading">Product Name</h3>
+                  <p class="product_desc">Lorem ipsum dolor sit amet.</p>
+                  <div class="quantity">
+                    <button name="sub" value="sub">-</button>
+                    <span>1</span>
+                    <button name="add" value="add">+</button>
+                  </div>
+                  <div class="price">
+                    <span class="rate">Rs.593</span>
+                    <span class="rate_cut">Rs.1200</span>
+                    <span class="offer">73% OFF</span>
+                  </div>
+                  <span class="return">
+                    <span class="return_date">7 Days</span>
+                    <span>return available</span>
+                  </span>
+                </div>
+              </div>
+              <span class="cancel_product">
+                <img src="../images/cross.png" alt="" />
+              </span>
+            </div> -->
+          </div>
+          
+
+          <!-- order section -->
+          <div class="order_container">
+            <span class="price_detail">
+              <p>price Details (<span id="items"></span> items)</p>
+            </span>
+            <div class="amount">
+              <div class="orders">
+                <p>Total MRP</p>
+                <p id="mrp"></p>
+              </div>
+              <div class="orders">
+                <p>Discount on MRP</p>
+                <p id="disscount" class="disscount_order"></p>
+              </div>
+              <div class="orders">
+                <p>Convenience Fee</p>
+                <p id="fee"</pid>
+              </div>
             </div>
-          </main>
-          <!-- Footer section -->
-          <footer class="footer">
-            <div class="footer_link">
-              <h2 class="list_heading">ONLINE SHOPPING</h2>
-              <ul class="lists">
-                <li class="list">Men</li>
-                <li class="list">Women</li>
-                <li class="list">Kids</li>
-                <li class="list">Home & Living</li>
-                <li class="list">Beauty</li>
-                <li class="list">Gift Card</li>
-                <li class="list">Myntra Insider</li>
-              </ul>
+            <hr class="hr">
+            <div class="place_order">
+              <div class="orders total">
+                <p>Total Amount</p>
+                <p id="total"></p>
+              </div>
+              <button id="order" class="order_btn">Place Order</button>
             </div>
-            <div class="footer_link">
-              <h2 class="list_heading">ONLINE SHOPPING</h2>
-              <ul class="lists">
-                <li class="list">Men</li>
-                <li class="list">Women</li>
-                <li class="list">Kids</li>
-                <li class="list">Home & Living</li>
-                <li class="list">Beauty</li>
-                <li class="list">Gift Card</li>
-                <li class="list">Myntra Insider</li>
-              </ul>
-            </div>
-            <div class="footer_link">
-              <h2 class="list_heading">ONLINE SHOPPING</h2>
-              <ul class="lists">
-                <li class="list">Men</li>
-                <li class="list">Women</li>
-                <li class="list">Kids</li>
-                <li class="list">Home & Living</li>
-                <li class="list">Beauty</li>
-                <li class="list">Gift Card</li>
-                <li class="list">Myntra Insider</li>
-              </ul>
-            </div>
-          </footer>
+          </div>
+        </div>
+      </main>
+      <!-- Footer section -->
+      <footer class="footer">
+        <div class="footer_link">
+          <h2 class="list_heading">ONLINE SHOPPING</h2>
+          <ul class="lists">
+            <li class="list">Men</li>
+            <li class="list">Women</li>
+            <li class="list">Kids</li>
+            <li class="list">Home & Living</li>
+            <li class="list">Beauty</li>
+            <li class="list">Gift Card</li>
+            <li class="list">Myntra Insider</li>
+          </ul>
+        </div>
+        <div class="footer_link">
+          <h2 class="list_heading">ONLINE SHOPPING</h2>
+          <ul class="lists">
+            <li class="list">Men</li>
+            <li class="list">Women</li>
+            <li class="list">Kids</li>
+            <li class="list">Home & Living</li>
+            <li class="list">Beauty</li>
+            <li class="list">Gift Card</li>
+            <li class="list">Myntra Insider</li>
+          </ul>
+        </div>
+        <div class="footer_link">
+          <h2 class="list_heading">ONLINE SHOPPING</h2>
+          <ul class="lists">
+            <li class="list">Men</li>
+            <li class="list">Women</li>
+            <li class="list">Kids</li>
+            <li class="list">Home & Living</li>
+            <li class="list">Beauty</li>
+            <li class="list">Gift Card</li>
+            <li class="list">Myntra Insider</li>
+          </ul>
+        </div>
+      </footer>
     </div>
-</body>
+    <script src="../scripts/cart.js"></script>
+  </body>
 </html>

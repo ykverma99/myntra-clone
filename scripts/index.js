@@ -160,6 +160,3 @@ function addCart(e) {
   localStorage.setItem("product", JSON.stringify(cartData));
 }
 
-window.onbeforeunload = function(){
-    localStorage.clear()
-}
