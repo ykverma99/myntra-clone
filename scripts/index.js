@@ -111,7 +111,7 @@ Data.forEach((elm, i) => {
   likes.textContent = ` | ${elm.likes}`;
   likes.className = "product_like";
   let ratingImage = document.createElement("img");
-  ratingImage.src = "../images/star.png";
+  ratingImage.src = "./images/star.png";
   ratingImage.className = "product_rating_img";
   ratingContainer.append(rating, ratingImage, likes);
   imageContainer.append(productImg, ratingContainer);
